@@ -3,7 +3,7 @@ variable "subnet_name"{
 }
 
 variable "ssh_key_id" {
-  default = "r006-adb7393f-1a5b-4671-8dbb-f0dcc6810b63"
+  default = "r006-687f4e20-6904-4f66-90c2-6c4d92c16262"
 }
 
 variable "ibmcloud_api_key"{
