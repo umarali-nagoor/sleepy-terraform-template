@@ -8,5 +8,6 @@ variable "resource_group" {
 
 variable "vpc_tags" {
   type = list(string)
+  default = ["tag:test1", "tag:test2"]
 }
 
