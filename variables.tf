@@ -1,5 +1,5 @@
 variable "vpc_name"{
-  default = "testsubnet"
+  type = string
 }
 
 variable "resource_group" {
