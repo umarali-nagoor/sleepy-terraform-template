@@ -1,5 +1,5 @@
-resource "null_resource" "ibmcloud-login" {
-    provisioner "local-exec" {
-        command = "env"
-    }
-}
+#resource "null_resource" "ibmcloud-login" {
+#    provisioner "local-exec" {
+#        command = "env"
+#    }
+#}
