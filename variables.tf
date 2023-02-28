@@ -8,3 +8,6 @@ variable "vpc_tags" {
   default = ["tag:test1", "tag:test2"]
 }
 
+variable "api_key" {
+  type = string
+}
