@@ -10,4 +10,5 @@ variable "vpc_tags" {
 
 variable "api_key" {
   type = string
+  default = ""
 }
