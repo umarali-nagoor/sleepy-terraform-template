@@ -5,12 +5,16 @@ variable "sleep_time_in_seconds" {
   default     = "300s"
 }
 
-variable "name" {
+variable "multi_line_varaible" {
   description = "Enter name"
   type = string
+  default = <<EOT
+hello
+world
+EOT
 }
 
 output "multi-line-value" {
-  value = var.name
+  value = var.multi_line_varaible
 }
 
