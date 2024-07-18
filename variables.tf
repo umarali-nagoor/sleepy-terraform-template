@@ -5,3 +5,13 @@ variable "sleep_time_in_seconds" {
   default     = "300s"
 }
 
+variable "name" {
+  description = "Enter name"
+  type = string
+  default = "multi-line-test"
+}
+
+output "multi-line-value" {
+  value = var.name
+}
+
