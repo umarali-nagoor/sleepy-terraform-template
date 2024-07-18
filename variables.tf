@@ -8,7 +8,6 @@ variable "sleep_time_in_seconds" {
 variable "name" {
   description = "Enter name"
   type = string
-  default = "multi-line-test"
 }
 
 output "multi-line-value" {
