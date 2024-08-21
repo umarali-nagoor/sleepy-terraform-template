@@ -2,19 +2,34 @@
 
 variable "sleep_time_in_seconds" {
   description = "Sleep time"
-  default     = "300s"
+  default     = "10s"
 }
 
-variable "multi_line_varaible" {
+variable "heredoc_multi_line" {
   description = "Enter name"
   type = string
-  default = <<EOT
-hello
-world
-EOT
+  default = `<<EOT
+This
+is
+Heredoc
+multiline
+EOT`
 }
 
-output "multi-line-value" {
-  value = var.multi_line_varaible
+variable "plain_multi_line" {
+  description = "Enter name"
+  type = string
+  default = `<<This
+is
+plain
+multiline`
+}
+
+output "heredoc-multi-line" {
+  value = var.heredoc_multi_line
+}
+
+output "plain_multi_line" {
+  value = var.plain_multi_line
 }
 
